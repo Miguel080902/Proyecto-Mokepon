@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+body{
+    font-family: 'Press Start 2P', cursive;
+    background-color: #645CAA;
+}
+input{
+    display: none;
+}
+#selecciona-mascota{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titulo{
+    font-size: 32px;
+    color: aliceblue;
+}
+.eleccion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 250px;
+    border: 1px solid #EBC7E8;
+    border-radius: 50px;
+    background-color: #A084CA;
+}
+.subtitulo{
+    font-size: 20px;
+}
+.tarjeta-mascota{
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 100px;
+    background-color:#EBC7E8;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+.tarjetas{
+    display: flex;
+    gap: 10px;
+}
+.tarjetas img{
+    width: 80px;
+}
+input:hover + label{
+    color: black;
+    background-color: #f4e9f3;
+}
+input:checked + label{
+    color: white;
+    background-color: #645CAA;
+    scale: 1.05;
+}
+
+#boton-seleccion{
+    margin-top: 20px;
+    background-color: #EBC7E8;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-family: 'Press Start 2P', cursive;
+    width: 180px;
+    height: 30px;
+}
+#boton-seleccion:hover{
+    color: black;
+    background-color: #f4e9f3;
+}
+#boton-seleccion:active{
+    color: white;
+    background-color: #645CAA;
+    scale: 1.1;
+}
+#selecciona-ataque{
+    flex-direction: column;
+    align-items: center;
+}
+.botones{
+    display: flex;
+    gap: 30px;
+}
+.boton-ataque{
+    width: 150px;
+    height: 40px;
+    background-color:#EBC7E8 ;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    font-family: 'Press Start 2P', cursive;
+}
+.boton-ataque:hover{
+    color: black;
+    background-color: #f4e9f3;
+}
+.boton-ataque:active{
+    color: white;
+    background-color: #645CAA;
+    scale: 1.1;
+}
+
+.seccion-ataques{
+    display: flex;
+    align-items: center;
+}
+.ataque-mascota{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 160px;
+    border-radius: 10px;
+    border: 2px solid white;
+    align-items: center;
+    justify-content: center;
+    background-color: #A084CA;
+}
+.consola{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    align-items: center;
+    justify-content: center;
+    width:600px;
+    height: 150px;
+    border: 2px solid white;
+    border-radius: 50px;
+    background-color: #A084CA;
+}
+.consola p{
+    text-align: center;
+    margin: 20px;
+}
+
+#boton-reiniciar{
+    margin-top: 20px;
+    background-color: #EBC7E8;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-family: 'Press Start 2P', cursive;
+    width: 180px;
+    height: 30px;
+}
+#boton-reiniciar:hover{
+    color: black;
+    background-color: #f4e9f3;
+}
+#boton-reiniciar:active{
+    color: white;
+    background-color: #645CAA;
+    scale: 1.1;
+}
+.mascota-jugadores{
+    display: flex;
+    gap: 20px;
+}
+
+.tarjeta-batalla{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px;
+    border: 2px solid azure;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #A084CA;
+}
+
+.vidas{
+    margin-top: 15px;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+.mascotas{
+    font-size: 24px;
+}
+
+@media (max-width:360px)
+{
+    .tarjetas{
+        flex-direction: column;
+    }
+    .eleccion{
+        height: 500px;
+        width: 340px;
+    }
+    .eleccion .subtitulo{
+        font-size: 17px;
+    }
+}
+@media (max-width:360px)
+{
+   .botones{
+    flex-direction: column;
+   }
+   .consola{
+    width: 340px;
+   }
+   .tarjeta-batalla{
+    width: 100px;
+    height: 100px;
+   }
+   .mascotas{
+    font-size: 16px;
+   }
+   #resultado-combate{
+    font-size: 12px;
+    text-align: center;
+   }
+}
+
+#ver-mapa{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#mapa{
+    border: 2px solid black;
+}

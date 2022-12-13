@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mokepon</title>
+	<link rel="stylesheet" href="CSS/estilos.css">
+</head>
+<body>
+	
+	<section id="selecciona-mascota">
+		<h1 class="titulo"> 🔺Mokepón🔺</h1>
+
+		<div class="eleccion">
+			<h2 class="subtitulo">Elige tu mascota!</h2>
+			<div id="contenedor-tarjetas" class="tarjetas">
+				
+			</div>
+			<button id="boton-seleccion">Seleccionar</button>
+		</div>
+	</section>
+	<section id="ver-mapa">
+		<h1 class="titulo"> Recorre el mapa con tu mascota</h1>
+		<canvas id="mapa"></canvas>
+		<button onmouseup="detenerMovimiento()" onmousedown="moverDerecha()">Derecha</button>
+		<button onmouseup="detenerMovimiento()" onmousedown="moverIzquierda()">Izquierda</button>
+		<button onmouseup="detenerMovimiento()" onmousedown="moverAbajo()">Abajo</button>
+		<button onmouseup="detenerMovimiento()" onmousedown="moverArriba()">Arriba</button>
+	</section>
+	<section id="selecciona-ataque">
+		<h1 class="titulo"> 🔺Mokepón🔺</h1>
+		<h2 class="subtitulo">Elige tu ataque:</h2>
+		<div id="seccion-botones" class="botones">
+			
+		</div>	
+		
+		<div class="seccion-ataques">
+			<div class="ataque-mascota">
+				<p>Tu ataque:</p>
+				<p  id="ataque-jugador">
+				</p>
+			</div>
+			
+
+			<div class="consola">
+				<section id="resultado-combate">
+					Buena suerte
+				</section>
+				<section id="reiniciar">
+					<button id="boton-reiniciar">Reiniciar</button>
+				</section>
+			</div>
+
+			<div class="ataque-mascota">
+				<p>Ataque Enemigo:</p>
+				<p id="ataque-enemigo"></p>
+			</div>				
+			
+		</div>
+		
+		<div class="mascota-jugadores">
+			<p class="tarjeta-batalla"> 
+				<span class="mascotas" id="mascota-jugador"></span>  
+				<span class="vidas" id="vidas-jugador">0</span> victorias</p>
+			<p  class="tarjeta-batalla">
+				<span class="mascotas" id="mascota-enemigo"></span> 
+				<span class="vidas" id="vidas-enemigo">0</span> victorias</p>
+		</div>
+		
+	</section>
+	
+	<script src="JS/codigo.js"></script>
+</body>
+</html>
