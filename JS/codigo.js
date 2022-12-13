@@ -243,7 +243,7 @@ function revisionVidas()
         CrearMensajeFinal("Es un empate")
     }else if(victoriasJugador<victoriasEnemigo)
     {
-        CrearMensajeFinal("PERDISTE 😎, POR MAMAPOTO!!")
+        CrearMensajeFinal("PERDISTE 😎, POR NUB!!")
     }else {
         CrearMensajeFinal("Ganaste 😎, que pro!!")
     }
